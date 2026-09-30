@@ -1,6 +1,12 @@
 [project]
 name = "domain-contract-09303-004"
-version = "0.1.0"
-description = "合作办学课程版本的领域约定与校验工具"
+version = "0.2.0"
+description = "合作办学课程版本服务：版本化培养方案、依赖冻结、会签法定人数、学生适用性不漂移"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+curriculum-service = "curriculum_service.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
